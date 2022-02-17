@@ -10,9 +10,9 @@ Installing this theme alone will not bring you any benefits. Only make use of th
 
 Clone the repository in order to get started working
 
-´´´ bash
+```shell
 git clone git@github.com:vtex-apps/store-maintenance-theme.git
-´´´
+```
 
 
 ### Step 2: make it yours!
