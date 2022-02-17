@@ -1,62 +1,41 @@
-# Minimum Boilerplate Theme
+# Store Maintenance Theme
 
-The minimum Boilerplate Theme is basic store front model based on the VTEX IO Store Framework.
+This theme provides a basic layout for the /maintenance page from the app store-maintenance. It is a non-mandatory addition that allows quick development of a good looking maintenance page. You can however define this page in your native theme or via the CMS Pages in the Admin. 
 
-It should be used only when you want to start a new store theme without any pre-set configurations, as is the case with [Store Theme](https://github.com/vtex-apps/store-theme). 
+Installing this theme alone will not bring you any benefits. Only make use of this, if you intend to use the store maintenance app.
 
-While Store Theme gives developers a ready-to-go default store front structure, the Minimum Boilerplate Theme will enable you to build you store freely from scratch.
+## How to use this
 
-## Configuration
+### Step 1: clone this app
 
-### Step 1 -  Basic setup
+Clone the repository in order to get started working
 
-Access the VTEX IO [basic setup guide](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1) and follow all the given steps. 
+´´´ bash
+git clone git@github.com:vtex-apps/store-maintenance-theme.git
+´´´
 
-By the end of the setup, you should have the VTEX command line interface (Toolbelt) installed along with a developer workspace you can work in.
 
-### Step 2 - Cloning the Minimum Boilerplate Theme repository
-
-[Clone](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) this repository to your local files to be able to effectively start working on it.
-
-Then, access the repository's directory using your terminal. 
-
-### Step 3 - Editing the `Manifest.json`
-
-Once in the repository directory, it is time to edit the Minimum Boilerplate `manifest.json` file. 
-
-Once you are in the file, you must replace the `vendor` and `account` values. `vendor` is the account name you are working on and `account` is anything you want to name your theme. For example:
-
+### Step 2: make it yours!
+Rename the app and the vendor in the manifest. Make it yours.
 ```json
 {
-  "vendor": "storecomponents",
-  "name": "my-test-theme",
+  "vendor": "mycompany",
+  "name": "my-maintenance-theme",
 }
 ```
+### Step 3 - build your block structure
 
-### Step 4 -  Installing required apps
+in the file store/blocks.json you find a working draft of a very basic maintenance page. Add blocks and content as needed. I recommend to add at least your logo to the header. 
 
-In order to use Store Framework and work on your store theme, it is needed to have both `vtex.store-sitemap` and `vtex.store` installed.
 
-Run  `vtex list`  and check whether those apps are already installed. 
-
-If they aren't, run the following command to install them: `vtex install vtex.store-sitemap vtex.store -f`
-
-### Step 5 -  Uninstalling any existing theme
-
-By running `vtex list`,  you can verify if any theme is installed.
-
-It is common to already have a `vtex.store-theme`  installed when you start the store's front development process. 
-
-Therefore, if you find it in the app's list, copy its name and use it together with the command `vtex uninstall`. For example:
-
-```json
-vtex uninstall vtex.store-theme
-```
-
-### Step 6- Run and preview your store
+### Step 4 -  Test the theme in a dev workspace.
 
 Then time has come to upload all the changes you made in your local files to the platform. For that, use the `vtex link` command. 
 
 If the process runs without any errors, the following message will be displayed: `App linked successfully`. Then, run the `vtex browse` command to open a browser window having your linked store in it.
 
 This will enable you to see the applied changes in real time, through the account and workspace in which you are working.
+
+### Step 5 - Release the Kraken!
+
+Once your are happy, you can deploy and install the theme  towards your production workspaces.
