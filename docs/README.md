@@ -2,7 +2,7 @@
 
 This theme provides a basic layout for the /maintenance page from the app store-maintenance. It is a non-mandatory addition that allows quick development of a good looking maintenance page. You can however define this page in your native theme or via the CMS Pages in the Admin. 
 
-Installing this theme alone will not bring you any benefits. Only make use of this, if you intend to use the store maintenance app.
+Installing this theme alone will not bring you any benefits. Only make use of this, if you intend to use the [store maintenance app](https://github.com/vtex-apps/store-maintenance).
 
 ## How to use this
 
