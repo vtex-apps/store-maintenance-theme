@@ -1,3 +1,9 @@
+## 🚨 Disclaimer - Template Application
+>:warning: **This project is not maintained by VTEX, and this app is provided as a working example on how this feature can be implemented. Improvements and fixes will be on the implementation team side.**
+>
+>All template applications provided are developed by the VTEX community, you can use them freely.
+
+&nbsp;
 # Store Maintenance Theme
 
 This theme provides a basic layout for the /maintenance page from the app store-maintenance. It is a non-mandatory addition that allows quick development of a good looking maintenance page. You can however define this page in your native theme or via the CMS Pages in the Admin. 
